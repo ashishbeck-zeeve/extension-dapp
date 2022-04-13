@@ -1,0 +1,41 @@
+{
+  "name": "@axia-js/extension-dapp",
+  "description": "Provides an interfaces around the injected globals for ease of access by dapp developers.",
+  "version": "0.1.0",
+  "type": "module",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "license": "Apache-2",
+  "main": "index.js",
+  "sideEffects": false,
+  "dependencies": {
+    "@axia-js/extension-inject": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2",
+    "@babel/runtime": "^7.15.4"
+  },
+  "peerDependencies": {
+    "@axia-js/api": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./README.md": "./README.md",
+    "./util": {
+      "require": "./util.cjs",
+      "default": "./util.js"
+    },
+    "./wrapBytes": {
+      "require": "./wrapBytes.cjs",
+      "default": "./wrapBytes.js"
+    }
+  }
+}
