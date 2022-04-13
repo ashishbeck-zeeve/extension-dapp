@@ -8,7 +8,7 @@
   "main": "index.js",
   "sideEffects": false,
   "dependencies": {
-    "@axia-js/extension-inject": "0.1.0",
+    "@axia-js/extension-inject": "https://github.com/ashishbeck-zeeve/extension-inject.git",
     "@axia-js/util": "0.1.0",
     "@axia-js/util-crypto": "0.1.2",
     "@babel/runtime": "^7.15.4"
